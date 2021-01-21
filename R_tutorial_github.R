@@ -82,3 +82,34 @@ data('mtcars')
 ##dim(mtcars) show dimension
 ##str(mtcars) show simple of table //str=structure
 ##summary(mtcars) show example of statistic value
+
+#Function
+x <- 1:100
+#Basic Stat
+mean(x)
+sum(x)
+median(x)
+sd(x)
+var(x)
+
+y <- 1:1000
+help(fivenum)
+fivenum(y)
+
+# User - defined function รูปแบบการสร้างฟังชั่นมาใช้   เอง
+#   This is basic function with no argrument
+my_first_function <- function(){
+    x <- 1:100
+    print(mean(x))
+}
+
+#   function , one argrument
+square_function <- function(x){
+    a <- x^5
+    print(a)
+}
+#   function , two argrument
+triangle_function <- function(x,y){
+    b <- 0.5 * x * y
+    return(b)
+}
